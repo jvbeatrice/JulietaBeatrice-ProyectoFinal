@@ -13,16 +13,27 @@ p, span, h3, h4, h5, a, input, label, textarea {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-
+body{
+    background-image: URL("../images/backgrounds/cat.jpg");
+}
 .flex{
     display: flex;
 }
 .galeria{
-    display: flex;
+    display: grid;
     justify-content: center;
-}
-#galeria img{
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    gap:5px;
     padding: 10px;
+    transition: all 0.3s linear 0.2s;
+}
+.galeria:hover > img{
+    filter: grayscale(100) blur(1px);
+}
+.galeria > img:hover{
+    transform: scale(170%);
+    filter: initial;
+    z-index: 2;
 }
 .flexcenter{
     justify-content: center;
@@ -34,6 +45,12 @@ nav li{
     border-style: solid;
     border-color: black;
     background-color: rgba(202, 231, 37);
+    transition: all 0.2s linear 0.2s;
+}
+nav li:hover{
+    background-color: chocolate;
+    cursor: pointer;
+    transform: rotate(3deg);
 }
 a{
     text-decoration: none;
@@ -57,7 +74,7 @@ h2{
     text-align:left;
 }
 #principal{
-    background-color: rgb(201, 199, 199);
+    background-color: chocolate;
 }
 .container{
     border-style: none;
@@ -68,9 +85,14 @@ h2{
     border-style: none;
     margin: 0 auto;
     width: 1080px;
-    margin-bottom: 20px;
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-bottom:20px;
+}
+.containerfaqs > div{
+    background-color: #d3e0aafb;
+    margin-bottom: 20px;
+    padding-bottom:20px;
 }
 .mensaje textarea{
     width:100%;
@@ -92,8 +114,11 @@ textarea, input {
     box-sizing: border-box;
 }
 #presentacion p{
+    overflow:auto;
+    max-height: 150px;
     padding-left: 1rem;
     padding-right: 1rem;
+    background-color: #d3e0aafb;
 }
 #descripcion p{
     padding-left: 1rem;
@@ -104,53 +129,56 @@ h5{
     padding-bottom: 4px;
 }
 #descripcion{
-    flex-direction:column;
+    display: grid;
+    grid-template-columns: 1fr;
     border: 1px solid;
     padding: 10px;
-    background-color: #fefffb;
+    background-color: #d3e0aafb;
     margin-top: 10px;
 }
 #mejordelmundo{
     flex-direction:column;
     border: 1px solid;
     padding: 20px;
-    background-color: #fefffb;
+    background-color: #d3e0aafb;
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 50px;
 }
 #descripcion div{
-    min-height: 89px;
-    max-height: 89px;
+    height: 100px;
     overflow: auto;
+    padding: 10px;
+    transition: all 0.3s linear 0.2s;
 }
-#gatitos span{
-    width: 50%;
-    margin: 10px;
-    background-color: white;
+#descripcion div:hover{
+    transform: scale(102%);
 }
-.gatitos{
+.cardsContainer{
     display: flex;
     flex-direction: row;
 }
 img{
     width: 150px;
     height: 150px;
+    transition-delay: 0s;
+    transition: all 0.3s linear 0.2s;
 }
 footer {
     display: flex;
     justify-content: space-around;
     margin-bottom: 4rem;
+    background-color: chocolate;
 }
 footer a{
-    color: brown;
+    color: chocolate;
 }
 footer p{
     width: 40%;
     align-items: center;
 }
 
-.gatitos > div {
+.cardsContainer > div {
     margin: 10px;
     width: 50%;
 }

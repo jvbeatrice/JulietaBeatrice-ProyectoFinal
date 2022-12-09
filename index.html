@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los mejores gatitos</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
@@ -23,19 +25,19 @@
     </header>
     <main>
     <div id="principal">
-        <h1 class="flex">
+        <h1 class="flex animate__animated animate__bounce">
             Bienvenido al sitio de los mejores gatitos en el mundo
         </h1>
     </div>
     <section class="container">
-        <div class="gatitos">
+        <div class="cardsContainer">
             <div id="mushucol">
                 <h2>Mushu/Mushetto</h2>
                 <section id="presentacion" class="flex">
                         <img src="images/cats/mushu.jpg" alt="Mushu">
                         <p>Mushetto es un gran gatito por muchas razones. No creemos poder lograr que su majestuosidad entre en una página, pero vamos a intentarlo.</p>
                 </section>
-                <section id="descripcion" class="flex">
+                <section id="descripcion">
                         <div>
                         <h5>Biografía</h5>
                         <p>Mushetto es un gran gatito por mu majestuosidad entre en una página, pero vamos a intentarlo.</p>
@@ -60,7 +62,7 @@
                         <img src="images/cats/selkie.png" alt="Selkie">
                         <p>Selkie es una princesita. Ella siempre está cerquita, aunque no la veas. Hace poco que es la mejor amiga de Mushetto, pero tiene mucho que decirnos con su gran personalidad.</p>
                 </section>
-                <section id="descripcion" class="flex">
+                <section id="descripcion">
                         <div>
                         <h5>Biografía</h5>
                         <p>Selkie es una princesita. Ella siempre está cerquita, aunque no la veas. Hace poco que es la mejor amiga de Mushetto, pero tiene mucho que decirnos con su gran personalidad.</p>
@@ -81,7 +83,7 @@
             </div>
         </div>        
     <section class="mensaje">
-    <form>
+    <form data-aos="flip-left">
       <label for="alabanzas">Dejame tus comentarios alabando a los mejores gatitos:</label>
         <label>¿Cuál es tu favorito?</label>
         <div class="radio-cat">
@@ -98,6 +100,10 @@
 </section>
 </section>
 </main>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 <footer>
 <p>2022, Julieta Beatrice</p>
