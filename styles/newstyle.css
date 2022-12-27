@@ -41,7 +41,7 @@ nav li {
   padding: 0.7rem;
   border-style: solid;
   border-color: black;
-  background-color: yellow;
+  /*ackground-color: rgba(202, 231, 37);*/
   transition: all 0.2s linear 0.2s; }
 
 nav li:hover {
