@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/jvbeatrice/JulietaBeatrice-ProyectoFinal.git"
   },
-  "author": "",
+  "author": "Julieta Verónica Beatrice",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jvbeatrice/JulietaBeatrice-ProyectoFinal/issues"
@@ -21,5 +21,5 @@
     "node-sass": "^8.0.0"
   },
   "keywords": [],
-  "description": ""
+  "description": "Este sitio fue creado en honor a los mejores gatitos del mundo que son propios de la creadora del proyecto, aplicándose así para el curso de Coderhouse como proyecto final."
 }
