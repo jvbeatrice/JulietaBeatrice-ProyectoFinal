@@ -23,14 +23,12 @@ body {
   gap: 5px;
   padding: 10px;
   transition: all 0.3s linear 0.2s; }
-
-.galeria:hover > img {
-  filter: grayscale(100) blur(1px); }
-
-.galeria > img:hover {
-  transform: scale(170%);
-  filter: initial;
-  z-index: 2; }
+  .galeria:hover > img {
+    filter: grayscale(100) blur(1px); }
+  .galeria > img:hover {
+    transform: scale(170%);
+    filter: initial;
+    z-index: 2; }
 
 .flexcenter {
   justify-content: center; }
